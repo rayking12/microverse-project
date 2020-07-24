@@ -12,10 +12,31 @@
       <h1 id="title"> Survey Form </h1>
       <p> Thank you for taking the time to help us improve the platform </p>
       <form id="survey-form">
+        <div>  
         <input id="name" type="text" placeholder="Enter your name" required> </input>
         <input id="email" type="email" placeholder="Enter your email" required> </input>
-        <input id="number" type="number" placeholder="Enter your age" required> </input>
-        <input type="submit"></input>
+        <input id="number" type="number" min="0" max="40" placeholder="Enter your age" required> </input>
+        <select id = "dropdown">
+          <option value="Male"> Male </option>
+          <option value="Male"> Female </option>
+        </select>
+        <div>
+          <fieldset id = "group">
+        <input type= "radio" name="group"> London </input>
+        <input type= "radio" name= "group"> Nigeria </input>
+        <input type="radio" name= "group"> Pakistan </input>
+      </fieldset>
+       </div>
+      <label> Vehicle Used: </label>
+      <input type="checkbox"> Volvo </input>
+      <input type="checkbox"> Toyota </input>
+      <input type="checkbox"> Benz </input>
+       <div>
+      <textarea> Please drop your comments here</textarea>
+    </div>
+      </div>
+
+        <input id = "submit" type="submit"></input>
       </form>
 
 
