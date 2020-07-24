@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    align-content: center;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+label{
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
+#survey-form{
+    width: 70%; 
+    background-color: rgba(27, 27, 50, 0.8);
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#inputs input,select{
+    padding: 10px;
+    margin: 10px;
+}
+#inputs input{
+    margin-left: 10px;
+}
+
+#survey-form div{
+    margin: 10px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#radios{
+    display: flex;
+    flex-direction: row;
+}
+
+#vehicles{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+}
+
+#vehicles-checkbox{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit{
+    display: inline-block;;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #37af65;
+    text-align: center;
+}

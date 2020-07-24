@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <h1 id="title"> Survey Form </h1>
-      <p> Thank you for taking the time to help us improve the platform </p>
-      <form id="survey-form">
-        <div>  
-        <input id="name" type="text" placeholder="Enter your name" required> </input>
-        <input id="email" type="email" placeholder="Enter your email" required> </input>
-        <input id="number" type="number" min="0" max="40" placeholder="Enter your age" required> </input>
-        <select id = "dropdown">
-          <option value="Male"> Male </option>
-          <option value="Male"> Female </option>
-        </select>
-        <div>
-          <fieldset id = "group">
-        <input type= "radio" name="group"> London </input>
-        <input type= "radio" name= "group"> Nigeria </input>
-        <input type="radio" name= "group"> Pakistan </input>
-      </fieldset>
-       </div>
-      <label> Vehicle Used: </label>
-      <input type="checkbox"> Volvo </input>
-      <input type="checkbox"> Toyota </input>
-      <input type="checkbox"> Benz </input>
-       <div>
-      <textarea> Please drop your comments here</textarea>
-    </div>
-      </div>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header>
+    <h1 id="title"> Survey Form </h1>
+    <p> Thank you for taking the time to help us improve the platform </p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div>
+        <div id="inputs">
+          <label> Name </label>
+          <input id="name" type="text" placeholder="Enter your name" required> </input>
+          <label> Email </label>
+          <input id="email" type="email" placeholder="Enter your email" required> </input>
+          <label> Number </label>
+          <input id="number" type="number" min="0" max="40" placeholder="Enter your age" required> </input>
+          <label>Gender</label>
+          <select id="dropdown">
+            <option value="Male"> Male </option>
+            <option value="Male"> Female </option>
+          </select>
+        </div>
+        <div id="radio-location">
+          <fieldset id="group">
+            <div id="radios">
+              <label>London</label>
+              <input type="radio" name="group"> </input>
+            </div>
+            <div id="radios">
+              <label>Nigeria</label>
+              <input type="radio" name="group"></input>
+            </div>
+            <div id="radios">
+              <label>Pakistan</label>
+              <input type="radio" name="group"> </input>
+            </div>
+          </fieldset>
+        </div>
+        <div id="vehicles">
+          <label style="align-self: center; font-weight: bold;"> Vehicle Used: </label>
+          <div id="vehicles-checkbox">
+            <label>Volvo</label>
+            <input type="checkbox"> </input>
+          </div>
+          <div id="vehicles-checkbox">
+            <label>Toyota</label>
+            <input type="checkbox"> </input>
+          </div>
+          <div id="vehicles-checkbox">
+            <label>Benz</label>
+            <input type="checkbox"> </input>
+          </div>
+          <div id="textareas">
+            <textarea> Please drop your comments here</textarea>
+          </div>
+        </div>
 
-        <input id = "submit" type="submit"></input>
-      </form>
+        <input id="submit" type="submit"></input>
+    </form>
+  </main>
+  <footer>
+    Footer
+  </footer>
 
 
-    <script  src="js/index.js"></script>
-  </body>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
